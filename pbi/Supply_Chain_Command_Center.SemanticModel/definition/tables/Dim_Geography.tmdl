@@ -1,0 +1,37 @@
+table Dim_Geography
+	lineageTag: 40000000-0000-0000-0000-000000000004
+
+	column geography_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: geography_key
+
+	column market
+		dataType: string
+		sourceColumn: market
+
+	column order_region
+		dataType: string
+		sourceColumn: order_region
+
+	column order_country
+		dataType: string
+		sourceColumn: order_country
+
+	column order_state
+		dataType: string
+		sourceColumn: order_state
+
+	column order_city
+		dataType: string
+		sourceColumn: order_city
+
+	partition Dim_Geography = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/dim_geography.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

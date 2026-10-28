@@ -1,0 +1,5 @@
+shipping_mode_key,shipping_mode_name,scheduled_days,target_sla_hours
+1,Standard Class,4,96
+2,Second Class,2,48
+3,First Class,1,24
+4,Same Day,0,12

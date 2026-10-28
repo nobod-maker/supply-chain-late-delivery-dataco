@@ -1,0 +1,21 @@
+table Dim_Order_Status
+	lineageTag: 40000000-0000-0000-0000-000000000006
+
+	column order_status_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: order_status_key
+
+	column order_status_name
+		dataType: string
+		sourceColumn: order_status_name
+
+	partition Dim_Order_Status = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/dim_order_status.csv"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

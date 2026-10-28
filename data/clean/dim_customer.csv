@@ -1,0 +1,55 @@
+customer_key,customer_id,first_name,last_name,customer_segment,customer_city,customer_state,customer_country,customer_zipcode
+1,10066,René,Vásquez,Home Office,Miami,FL,EE. UU.,30635
+2,10011,María,Ferreira,Consumer,Miami,FL,EE. UU.,26361
+3,10051,René,Sánchez,Consumer,Houston,TX,EE. UU.,63354
+4,10017,Jürgen,Müller,Consumer,San Juan,PR,Puerto Rico,89840
+5,10002,Günter,López,Corporate,San Juan,PR,Puerto Rico,98696
+6,10035,Björn,Pérez,Consumer,Mayaguez,PR,Puerto Rico,59009
+7,10036,François,Gómez,Consumer,Miami,FL,EE. UU.,10074
+8,10056,André,Ferreira,Consumer,Mayaguez,PR,Puerto Rico,65296
+9,10020,Valentina,González,Home Office,Ponce,PR,Puerto Rico,14207
+10,10032,Carlos,Hernández,Corporate,Houston,TX,EE. UU.,10425
+11,10052,Juan,Martínez,Corporate,Chicago,IL,EE. UU.,56438
+12,10043,Emma,Pérez,Corporate,New York,NY,EE. UU.,62296
+13,10041,René,Gómez,Consumer,Mayaguez,PR,Puerto Rico,44741
+14,10049,Marta,Sánchez,Consumer,New York,NY,EE. UU.,97684
+15,10060,René,Cárdenas,Consumer,Ponce,PR,Puerto Rico,62565
+16,10037,Valentina,Cárdenas,Corporate,Caguas,PR,Puerto Rico,24662
+17,10010,Sebastián,Moreau,Consumer,Philadelphia,PA,EE. UU.,44671
+18,10014,Hélène,Sánchez,Consumer,New York,NY,EE. UU.,20458
+19,10059,Alejandro,García,Consumer,Ponce,PR,Puerto Rico,31798
+20,10065,Emma,Dubois,Corporate,Caguas,PR,Puerto Rico,16572
+21,10028,François,Santos,Consumer,Philadelphia,PA,EE. UU.,18326
+22,10050,Jürgen,Gómez,Consumer,Mayaguez,PR,Puerto Rico,84847
+23,10054,Gérard,Martínez,Consumer,Caguas,PR,Puerto Rico,62772
+24,10033,Emma,Müller,Consumer,Miami,FL,EE. UU.,33416
+25,10006,Gérard,Gómez,Home Office,Chicago,IL,EE. UU.,38893
+26,10016,Gérard,Moreau,Corporate,Mayaguez,PR,Puerto Rico,58520
+27,10044,Gérard,Moreau,Corporate,Houston,TX,EE. UU.,77839
+28,10024,Sofía,Sánchez,Corporate,Miami,FL,EE. UU.,80644
+29,10058,André,Martínez,Corporate,Caguas,PR,Puerto Rico,95477
+30,10048,Günter,García,Consumer,Caguas,PR,Puerto Rico,53309
+31,10025,Emma,Torres,Corporate,Chicago,IL,EE. UU.,86484
+32,10030,André,Rodríguez,Consumer,San Juan,PR,Puerto Rico,99353
+33,10063,David,Cárdenas,Home Office,Mayaguez,PR,Puerto Rico,34890
+34,10029,Isabella,Ramírez,Consumer,Houston,TX,EE. UU.,79352
+35,10008,Carlos,Dubois,Consumer,New York,NY,EE. UU.,30379
+36,10039,Inês,García,Home Office,San Juan,PR,Puerto Rico,73699
+37,10042,Björn,Santos,Corporate,Ponce,PR,Puerto Rico,80686
+38,10003,André,García,Home Office,Philadelphia,PA,EE. UU.,65302
+39,10064,Jürgen,González,Corporate,Philadelphia,PA,EE. UU.,81066
+40,10015,Günter,Martínez,Consumer,Chicago,IL,EE. UU.,46434
+41,10057,Camila,Ferreira,Consumer,Ponce,PR,Puerto Rico,19880
+42,10031,Camila,Castro,Home Office,Los Angeles,CA,EE. UU.,24621
+43,10019,Isabella,Müller,Consumer,Miami,FL,EE. UU.,38785
+44,10021,Valentina,Silva,Corporate,New York,NY,EE. UU.,18675
+45,10062,Lucía,Schneider,Consumer,Chicago,IL,EE. UU.,82845
+46,10047,Günter,Rodríguez,Corporate,San Juan,PR,Puerto Rico,92719
+47,10034,Juan,Castro,Consumer,New York,NY,EE. UU.,93748
+48,10055,Valentina,Martínez,Home Office,Ponce,PR,Puerto Rico,35112
+49,10004,Alejandro,García,Home Office,Ponce,PR,Puerto Rico,40495
+50,10045,Juan,Sánchez,Corporate,Ponce,PR,Puerto Rico,18392
+51,10023,Isabella,Castro,Consumer,Houston,TX,EE. UU.,28726
+52,10012,José,Gómez,Consumer,New York,NY,EE. UU.,92397
+53,10005,Björn,Rodríguez,Corporate,Miami,FL,EE. UU.,36062
+54,10022,Inês,Dubois,Consumer,Ponce,PR,Puerto Rico,95909

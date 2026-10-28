@@ -1,0 +1,134 @@
+table Fact_Order_Items
+	lineageTag: 40000000-0000-0000-0000-000000000007
+
+	column order_item_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: order_item_key
+
+	column order_id
+		dataType: int64
+		sourceColumn: order_id
+
+	column customer_key
+		dataType: int64
+		sourceColumn: customer_key
+
+	column product_key
+		dataType: int64
+		sourceColumn: product_key
+
+	column geography_key
+		dataType: int64
+		sourceColumn: geography_key
+
+	column shipping_mode_key
+		dataType: int64
+		sourceColumn: shipping_mode_key
+
+	column order_date_key
+		dataType: int64
+		sourceColumn: order_date_key
+
+	column ship_date_key
+		dataType: int64
+		sourceColumn: ship_date_key
+
+	column order_status_key
+		dataType: int64
+		sourceColumn: order_status_key
+
+	column quantity
+		dataType: int64
+		sourceColumn: quantity
+
+	column product_price
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: product_price
+
+	column gross_sales
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: gross_sales
+
+	column discount_rate
+		dataType: double
+		formatString: "0.0%"
+		sourceColumn: discount_rate
+
+	column discount_amount
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: discount_amount
+
+	column net_sales
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: net_sales
+
+	column profit_amount
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: profit_amount
+
+	column profit_margin_ratio
+		dataType: double
+		formatString: "0.0%"
+		sourceColumn: profit_margin_ratio
+
+	column scheduled_days
+		dataType: int64
+		sourceColumn: scheduled_days
+
+	column actual_days
+		dataType: int64
+		sourceColumn: actual_days
+
+	column shipping_delay_days
+		dataType: int64
+		sourceColumn: shipping_delay_days
+
+	column is_late_delivery
+		dataType: int64
+		sourceColumn: is_late_delivery
+
+	column is_negative_profit
+		dataType: int64
+		sourceColumn: is_negative_profit
+
+	column predicted_late_prob
+		dataType: double
+		formatString: "0.0%"
+		sourceColumn: predicted_late_prob
+
+	measure 'Total Orders' = DISTINCTCOUNT(Fact_Order_Items[order_id])
+		formatString: #,##0
+
+	measure 'Total Sales' = SUM(Fact_Order_Items[net_sales])
+		formatString: "$#,##0"
+
+	measure 'Total Profit' = SUM(Fact_Order_Items[profit_amount])
+		formatString: "$#,##0"
+
+	measure 'Profit Margin %' = DIVIDE([Total Profit], [Total Sales], 0.0)
+		formatString: "0.0%"
+
+	measure 'Late Orders Count' = CALCULATE([Total Orders], Fact_Order_Items[is_late_delivery] = 1)
+		formatString: #,##0
+
+	measure 'Late Delivery Rate %' = DIVIDE([Late Orders Count], [Total Orders], 0.0)
+		formatString: "0.0%"
+
+	measure 'OTIF %' = 1 - [Late Delivery Rate %]
+		formatString: "0.0%"
+
+	partition Fact_Order_Items = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/fact_order_items.csv"),[Delimiter=",", Columns=23, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

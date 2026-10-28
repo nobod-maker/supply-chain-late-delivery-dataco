@@ -1,0 +1,46 @@
+table Dim_Product
+	lineageTag: 40000000-0000-0000-0000-000000000002
+
+	column product_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: product_key
+
+	column product_card_id
+		dataType: int64
+		sourceColumn: product_card_id
+
+	column product_name
+		dataType: string
+		sourceColumn: product_name
+
+	column category_id
+		dataType: int64
+		sourceColumn: category_id
+
+	column category_name
+		dataType: string
+		sourceColumn: category_name
+
+	column department_id
+		dataType: int64
+		sourceColumn: department_id
+
+	column department_name
+		dataType: string
+		sourceColumn: department_name
+
+	column product_price
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: product_price
+
+	partition Dim_Product = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/dim_product.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

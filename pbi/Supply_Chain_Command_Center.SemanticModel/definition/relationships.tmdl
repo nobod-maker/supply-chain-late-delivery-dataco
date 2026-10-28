@@ -1,0 +1,23 @@
+relationship Rel_Fact_Customer
+	fromColumn: Fact_Order_Items.customer_key
+	toColumn: Dim_Customer.customer_key
+
+relationship Rel_Fact_Product
+	fromColumn: Fact_Order_Items.product_key
+	toColumn: Dim_Product.product_key
+
+relationship Rel_Fact_Shipping
+	fromColumn: Fact_Order_Items.shipping_mode_key
+	toColumn: Dim_Shipping.shipping_mode_key
+
+relationship Rel_Fact_Geography
+	fromColumn: Fact_Order_Items.geography_key
+	toColumn: Dim_Geography.geography_key
+
+relationship Rel_Fact_OrderDate
+	fromColumn: Fact_Order_Items.order_date_key
+	toColumn: Dim_Date.date_key
+
+relationship Rel_Fact_Status
+	fromColumn: Fact_Order_Items.order_status_key
+	toColumn: Dim_Order_Status.order_status_key

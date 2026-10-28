@@ -1,0 +1,45 @@
+table Dim_Customer
+	lineageTag: 40000000-0000-0000-0000-000000000001
+
+	column customer_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: customer_key
+
+	column customer_id
+		dataType: int64
+		sourceColumn: customer_id
+
+	column first_name
+		dataType: string
+		sourceColumn: first_name
+
+	column last_name
+		dataType: string
+		sourceColumn: last_name
+
+	column customer_segment
+		dataType: string
+		sourceColumn: customer_segment
+
+	column customer_city
+		dataType: string
+		sourceColumn: customer_city
+
+	column customer_state
+		dataType: string
+		sourceColumn: customer_state
+
+	column customer_country
+		dataType: string
+		sourceColumn: customer_country
+
+	partition Dim_Customer = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/dim_customer.csv"),[Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

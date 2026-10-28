@@ -1,0 +1,138 @@
+-------------------------------------------------------------------------------
+-- PROJECT 4: DATACO SUPPLY CHAIN - ENTERPRISE DAX MEASURES
+-- Model Architecture: Star-Schema (Fact_Order_Items, Dim_Customer, Dim_Product,
+-- Dim_Shipping, Dim_Geography, Dim_Date, Dim_Order_Status)
+-------------------------------------------------------------------------------
+
+// ============================================================================
+// 1. Core Order Volume & Financial Metrics
+// ============================================================================
+
+[Total Orders] = 
+DISTINCTCOUNT(Fact_Order_Items[order_id])
+
+[Total Line Items] = 
+COUNTROWS(Fact_Order_Items)
+
+[Gross Sales] = 
+SUM(Fact_Order_Items[gross_sales])
+
+[Total Sales] = 
+SUM(Fact_Order_Items[net_sales])
+
+[Total Profit] = 
+SUM(Fact_Order_Items[profit_amount])
+
+[Profit Margin %] = 
+DIVIDE(
+    [Total Profit],
+    [Total Sales],
+    0.0
+)
+
+[Total Discount Amount] = 
+SUM(Fact_Order_Items[discount_amount])
+
+[Avg Discount Rate %] = 
+AVERAGE(Fact_Order_Items[discount_rate])
+
+
+// ============================================================================
+// 2. Fulfillment SLA & Delivery Performance (OTIF)
+// ============================================================================
+
+[Late Orders Count] = 
+CALCULATE(
+    [Total Orders],
+    Fact_Order_Items[is_late_delivery] = 1
+)
+
+[Late Delivery Rate %] = 
+DIVIDE(
+    [Late Orders Count],
+    [Total Orders],
+    0.0
+)
+
+[On-Time Delivery %] = 
+1.0 - [Late Delivery Rate %]
+
+[OTIF %] = 
+[On-Time Delivery %]
+
+[Avg Scheduled Days] = 
+AVERAGE(Fact_Order_Items[scheduled_days])
+
+[Avg Actual Days] = 
+AVERAGE(Fact_Order_Items[actual_days])
+
+[Shipping Delay Gap Days] = 
+[Avg Actual Days] - [Avg Scheduled Days]
+
+
+// ============================================================================
+// 3. Profit Leakage & Loss Order Elimination
+// ============================================================================
+
+[Loss Orders Count] = 
+CALCULATE(
+    [Total Orders],
+    Fact_Order_Items[profit_amount] < 0
+)
+
+[Loss Order Incidence %] = 
+DIVIDE(
+    [Loss Orders Count],
+    [Total Orders],
+    0.0
+)
+
+[Total Dollar Loss] = 
+CALCULATE(
+    ABS(SUM(Fact_Order_Items[profit_amount])),
+    Fact_Order_Items[profit_amount] < 0
+)
+
+[Simulated 15% Cap Profit Recovery] = 
+VAR RecoveredItemMargin = 
+    SUMX(
+        Fact_Order_Items,
+        IF(
+            Fact_Order_Items[discount_rate] > 0.15,
+            (Fact_Order_Items[discount_rate] - 0.15) * Fact_Order_Items[gross_sales],
+            0.0
+        )
+    )
+RETURN
+    [Total Profit] + RecoveredItemMargin
+
+
+// ============================================================================
+// 4. Time Intelligence & Growth Analytics (SAMEPERIODLASTYEAR)
+// ============================================================================
+
+[Sales SPLY] = 
+CALCULATE(
+    [Total Sales],
+    SAMEPERIODLASTYEAR(Dim_Date[full_date])
+)
+
+[Sales YoY %] = 
+DIVIDE(
+    [Total Sales] - [Sales SPLY],
+    [Sales SPLY],
+    0.0
+)
+
+[Profit SPLY] = 
+CALCULATE(
+    [Total Profit],
+    SAMEPERIODLASTYEAR(Dim_Date[full_date])
+)
+
+[Profit YoY %] = 
+DIVIDE(
+    [Total Profit] - [Profit SPLY],
+    [Profit SPLY],
+    0.0
+)

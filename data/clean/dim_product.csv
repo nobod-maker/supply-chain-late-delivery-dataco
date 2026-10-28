@@ -1,0 +1,49 @@
+product_key,product_card_id,product_name,category_id,category_name,department_id,department_name,product_price
+1,1016,Cardio Equipment Pro-1,4,Cardio Equipment,6,Fitness,258.0
+2,1046,Indoor/Outdoor Games Pro-1,10,Indoor/Outdoor Games,2,Fan Shop,57.36
+3,1005,Cleats Pro-5,1,Cleats,4,Footwear,50.61
+4,1037,Fishing Pro-2,8,Fishing,5,Outdoors,65.28
+5,1035,Shop By Sport Pro-5,7,Shop By Sport,2,Fan Shop,53.16
+6,1029,Camping & Hiking Pro-4,6,Camping & Hiking,5,Outdoors,99.48
+7,1007,Men's Footwear Pro-2,2,Men's Footwear,4,Footwear,102.02
+8,1017,Cardio Equipment Pro-2,4,Cardio Equipment,6,Fitness,279.75
+9,1004,Cleats Pro-4,1,Cleats,4,Footwear,66.54
+10,1036,Fishing Pro-1,8,Fishing,5,Outdoors,86.44
+11,1024,Golf Balls Pro-4,5,Golf Balls,3,Golf,24.24
+12,1003,Cleats Pro-3,1,Cleats,4,Footwear,71.34
+13,1044,Water Sports Pro-4,9,Water Sports,5,Outdoors,259.11
+14,1023,Golf Balls Pro-3,5,Golf Balls,3,Golf,23.12
+15,1048,Indoor/Outdoor Games Pro-3,10,Indoor/Outdoor Games,2,Fan Shop,53.09
+16,1031,Shop By Sport Pro-1,7,Shop By Sport,2,Fan Shop,44.57
+17,1015,Women's Apparel Pro-5,3,Women's Apparel,1,Apparel,41.24
+18,1033,Shop By Sport Pro-3,7,Shop By Sport,2,Fan Shop,31.55
+19,1021,Golf Balls Pro-1,5,Golf Balls,3,Golf,27.92
+20,1020,Cardio Equipment Pro-5,4,Cardio Equipment,6,Fitness,277.41
+21,1038,Fishing Pro-3,8,Fishing,5,Outdoors,56.59
+22,1002,Cleats Pro-2,1,Cleats,4,Footwear,79.21
+23,1025,Golf Balls Pro-5,5,Golf Balls,3,Golf,25.58
+24,1010,Men's Footwear Pro-5,2,Men's Footwear,4,Footwear,152.72
+25,1049,Indoor/Outdoor Games Pro-4,10,Indoor/Outdoor Games,2,Fan Shop,53.89
+26,1027,Camping & Hiking Pro-2,6,Camping & Hiking,5,Outdoors,78.27
+27,1032,Shop By Sport Pro-2,7,Shop By Sport,2,Fan Shop,34.08
+28,1006,Men's Footwear Pro-1,2,Men's Footwear,4,Footwear,109.66
+29,1030,Camping & Hiking Pro-5,6,Camping & Hiking,5,Outdoors,70.0
+30,1008,Men's Footwear Pro-3,2,Men's Footwear,4,Footwear,165.05
+31,1011,Women's Apparel Pro-1,3,Women's Apparel,1,Apparel,36.59
+32,1050,Indoor/Outdoor Games Pro-5,10,Indoor/Outdoor Games,2,Fan Shop,43.04
+33,1028,Camping & Hiking Pro-3,6,Camping & Hiking,5,Outdoors,95.26
+34,1040,Fishing Pro-5,8,Fishing,5,Outdoors,70.98
+35,1039,Fishing Pro-4,8,Fishing,5,Outdoors,81.23
+36,1045,Water Sports Pro-5,9,Water Sports,5,Outdoors,181.04
+37,1018,Cardio Equipment Pro-3,4,Cardio Equipment,6,Fitness,319.45
+38,1009,Men's Footwear Pro-4,2,Men's Footwear,4,Footwear,144.38
+39,1019,Cardio Equipment Pro-4,4,Cardio Equipment,6,Fitness,302.74
+40,1022,Golf Balls Pro-2,5,Golf Balls,3,Golf,20.83
+41,1042,Water Sports Pro-2,9,Water Sports,5,Outdoors,209.41
+42,1013,Women's Apparel Pro-3,3,Women's Apparel,1,Apparel,59.97
+43,1014,Women's Apparel Pro-4,3,Women's Apparel,1,Apparel,42.12
+44,1041,Water Sports Pro-1,9,Water Sports,5,Outdoors,164.64
+45,1047,Indoor/Outdoor Games Pro-2,10,Indoor/Outdoor Games,2,Fan Shop,46.84
+46,1026,Camping & Hiking Pro-1,6,Camping & Hiking,5,Outdoors,109.89
+47,1043,Water Sports Pro-3,9,Water Sports,5,Outdoors,154.12
+48,1012,Women's Apparel Pro-2,3,Women's Apparel,1,Apparel,63.93

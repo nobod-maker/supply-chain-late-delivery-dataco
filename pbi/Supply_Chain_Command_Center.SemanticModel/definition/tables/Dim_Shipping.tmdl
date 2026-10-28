@@ -1,0 +1,29 @@
+table Dim_Shipping
+	lineageTag: 40000000-0000-0000-0000-000000000003
+
+	column shipping_mode_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: shipping_mode_key
+
+	column shipping_mode_name
+		dataType: string
+		sourceColumn: shipping_mode_name
+
+	column scheduled_days
+		dataType: int64
+		sourceColumn: scheduled_days
+
+	column target_sla_hours
+		dataType: int64
+		sourceColumn: target_sla_hours
+
+	partition Dim_Shipping = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/dim_shipping.csv"),[Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

@@ -1,0 +1,21 @@
+geography_key,market,order_region,order_country,order_state,order_city
+1,USCA,USCA,United States,California,Los Angeles
+2,USCA,USCA,United States,New York,New York
+3,LATAM,South America,Colombia,Cundinamarca,Bogotá
+4,Europe,Southern Europe,Spain,Madrid,Madrid
+5,Europe,Eastern Europe,Poland,Mazovia,Warszawa
+6,Pacific Asia,Southeast Asia,Indonesia,Jakarta,Jakarta
+7,LATAM,South America,Colombia,Antioquia,Medellín
+8,Pacific Asia,Southeast Asia,Vietnam,Ho Chi Minh,Ho Chi Minh City
+9,Europe,Western Europe,France,Île-de-France,Paris
+10,Pacific Asia,East Asia,China,Shanghai,Shanghai
+11,Europe,Western Europe,Germany,Bavaria,München
+12,LATAM,South America,Brazil,São Paulo,São Paulo
+13,Pacific Asia,South Asia,India,Maharashtra,Mumbai
+14,Pacific Asia,Oceania,Australia,New South Wales,Sydney
+15,Europe,Northern Europe,United Kingdom,England,London
+16,LATAM,South America,Argentina,Córdoba,Córdoba
+17,Africa,Southern Africa,South Africa,Gauteng,Johannesburg
+18,Africa,Western Africa,Nigeria,Lagos,Lagos
+19,LATAM,Central America,Mexico,Jalisco,Guadalajara
+20,USCA,USCA,Canada,Ontario,Toronto

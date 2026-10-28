@@ -1,0 +1,201 @@
+Order Item Id,Order Id,Customer Id,Market,Order Region,Shipping Mode,Days for shipment (scheduled),Late_delivery_risk,predicted_late_prob,predicted_late_risk_tier
+1,10001,10066,USCA,USCA,Standard Class,4,0,0.0806,Low Risk
+2,10001,10066,USCA,USCA,Standard Class,4,0,0.0765,Low Risk
+3,10002,10011,USCA,USCA,Standard Class,4,0,0.3072,Low Risk
+4,10003,10051,LATAM,South America,Second Class,2,1,0.9945,High Risk
+5,10003,10051,LATAM,South America,Second Class,2,1,0.9893,High Risk
+6,10003,10051,LATAM,South America,Second Class,2,1,0.9958,High Risk
+7,10004,10017,Europe,Southern Europe,First Class,1,1,0.9917,High Risk
+8,10005,10002,Europe,Eastern Europe,Second Class,2,1,0.9803,High Risk
+9,10006,10035,USCA,USCA,Standard Class,4,0,0.221,Low Risk
+10,10006,10035,USCA,USCA,Standard Class,4,0,0.1167,Low Risk
+11,10007,10036,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9859,High Risk
+12,10007,10036,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9585,High Risk
+13,10008,10002,LATAM,South America,Standard Class,4,0,0.1532,Low Risk
+14,10009,10056,Pacific Asia,Southeast Asia,First Class,1,1,0.9952,High Risk
+15,10009,10056,Pacific Asia,Southeast Asia,First Class,1,1,0.999,High Risk
+16,10009,10056,Pacific Asia,Southeast Asia,First Class,1,1,0.9982,High Risk
+17,10010,10020,Europe,Western Europe,Second Class,2,0,0.0248,Low Risk
+18,10011,10032,Europe,Southern Europe,Standard Class,4,0,0.0091,Low Risk
+19,10011,10032,Europe,Southern Europe,Standard Class,4,0,0.0077,Low Risk
+20,10011,10032,Europe,Southern Europe,Standard Class,4,0,0.0091,Low Risk
+21,10012,10052,Pacific Asia,East Asia,Standard Class,4,0,0.0426,Low Risk
+22,10013,10043,Europe,Western Europe,First Class,1,1,0.9715,High Risk
+23,10014,10056,LATAM,South America,First Class,1,1,0.9983,High Risk
+24,10015,10056,Pacific Asia,Southeast Asia,Same Day,0,0,0.0582,Low Risk
+25,10016,10041,Pacific Asia,Southeast Asia,Standard Class,4,0,0.0185,Low Risk
+26,10016,10041,Pacific Asia,Southeast Asia,Standard Class,4,0,0.0484,Low Risk
+27,10017,10049,Pacific Asia,Southeast Asia,Second Class,2,1,0.997,High Risk
+28,10017,10049,Pacific Asia,Southeast Asia,Second Class,2,1,0.9972,High Risk
+29,10018,10060,Pacific Asia,South Asia,Standard Class,4,0,0.2281,Low Risk
+30,10019,10037,Pacific Asia,Oceania,Standard Class,4,0,0.0299,Low Risk
+31,10019,10037,Pacific Asia,Oceania,Standard Class,4,0,0.0274,Low Risk
+32,10020,10010,Europe,Northern Europe,Standard Class,4,0,0.0136,Low Risk
+33,10020,10010,Europe,Northern Europe,Standard Class,4,0,0.0151,Low Risk
+34,10021,10014,LATAM,South America,Second Class,2,1,0.9602,High Risk
+35,10022,10059,Pacific Asia,Southeast Asia,Standard Class,4,0,0.0195,Low Risk
+36,10023,10065,LATAM,South America,Standard Class,4,1,0.9687,High Risk
+37,10024,10036,Pacific Asia,Oceania,Second Class,2,0,0.9898,High Risk
+38,10025,10035,Europe,Southern Europe,Second Class,2,0,0.9366,High Risk
+39,10026,10028,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9755,High Risk
+40,10027,10050,Europe,Eastern Europe,Standard Class,4,1,0.948,High Risk
+41,10028,10054,Pacific Asia,Oceania,Second Class,2,1,0.9689,High Risk
+42,10029,10052,Africa,Southern Africa,Standard Class,4,1,0.9604,High Risk
+43,10029,10052,Africa,Southern Africa,Standard Class,4,1,0.992,High Risk
+44,10029,10052,Africa,Southern Africa,Standard Class,4,1,0.9316,High Risk
+45,10029,10052,Africa,Southern Africa,Standard Class,4,1,0.9676,High Risk
+46,10030,10049,Europe,Southern Europe,First Class,1,1,0.7567,High Risk
+47,10031,10033,Pacific Asia,Southeast Asia,Standard Class,4,0,0.0224,Low Risk
+48,10032,10006,LATAM,South America,Standard Class,4,1,0.9587,High Risk
+49,10032,10006,LATAM,South America,Standard Class,4,1,0.8424,High Risk
+50,10033,10060,Europe,Southern Europe,First Class,1,1,0.9612,High Risk
+51,10033,10060,Europe,Southern Europe,First Class,1,1,0.9927,High Risk
+52,10034,10049,Europe,Northern Europe,Second Class,2,1,0.8016,High Risk
+53,10035,10016,Europe,Eastern Europe,Standard Class,4,0,0.577,Moderate Risk
+54,10036,10044,LATAM,South America,Standard Class,4,1,0.9477,High Risk
+55,10037,10020,Europe,Northern Europe,First Class,1,1,0.96,High Risk
+56,10037,10020,Europe,Northern Europe,First Class,1,1,0.9367,High Risk
+57,10038,10035,Pacific Asia,East Asia,Standard Class,4,0,0.0376,Low Risk
+58,10038,10035,Pacific Asia,East Asia,Standard Class,4,0,0.0696,Low Risk
+59,10038,10035,Pacific Asia,East Asia,Standard Class,4,0,0.0192,Low Risk
+60,10039,10024,Africa,Western Africa,Same Day,0,1,0.9948,High Risk
+61,10040,10002,Europe,Eastern Europe,First Class,1,1,0.9828,High Risk
+62,10040,10002,Europe,Eastern Europe,First Class,1,1,0.989,High Risk
+63,10041,10058,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9189,High Risk
+64,10042,10048,USCA,USCA,First Class,1,1,0.9915,High Risk
+65,10042,10048,USCA,USCA,First Class,1,1,0.9902,High Risk
+66,10042,10048,USCA,USCA,First Class,1,1,0.9886,High Risk
+67,10042,10048,USCA,USCA,First Class,1,1,0.9837,High Risk
+68,10043,10025,Europe,Western Europe,Second Class,2,1,0.9894,High Risk
+69,10044,10030,LATAM,South America,First Class,1,1,0.9984,High Risk
+70,10044,10030,LATAM,South America,First Class,1,1,0.9992,High Risk
+71,10045,10063,LATAM,South America,Standard Class,4,1,0.98,High Risk
+72,10046,10033,Pacific Asia,South Asia,First Class,1,1,0.9179,High Risk
+73,10047,10020,LATAM,South America,Same Day,0,1,0.9924,High Risk
+74,10048,10029,LATAM,Central America,First Class,1,1,0.991,High Risk
+75,10049,10008,Europe,Eastern Europe,Standard Class,4,0,0.0345,Low Risk
+76,10050,10010,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9599,High Risk
+77,10050,10010,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9914,High Risk
+78,10051,10010,Europe,Western Europe,Standard Class,4,0,0.1755,Low Risk
+79,10052,10035,Pacific Asia,Southeast Asia,Standard Class,4,0,0.0195,Low Risk
+80,10052,10035,Pacific Asia,Southeast Asia,Standard Class,4,0,0.0357,Low Risk
+81,10053,10039,Europe,Northern Europe,Standard Class,4,0,0.0492,Low Risk
+82,10054,10042,Pacific Asia,Oceania,Second Class,2,1,0.9901,High Risk
+83,10055,10003,LATAM,South America,Standard Class,4,0,0.1754,Low Risk
+84,10056,10056,Europe,Northern Europe,Standard Class,4,0,0.0993,Low Risk
+85,10057,10043,Europe,Northern Europe,First Class,1,1,0.9971,High Risk
+86,10057,10043,Europe,Northern Europe,First Class,1,1,0.9952,High Risk
+87,10058,10052,Europe,Eastern Europe,Standard Class,4,1,0.9759,High Risk
+88,10059,10064,LATAM,South America,Standard Class,4,1,0.9427,High Risk
+89,10060,10016,Pacific Asia,Southeast Asia,Standard Class,4,1,0.8776,High Risk
+90,10061,10015,Europe,Northern Europe,Second Class,2,1,0.9967,High Risk
+91,10062,10054,USCA,USCA,First Class,1,1,0.978,High Risk
+92,10063,10066,Pacific Asia,Southeast Asia,First Class,1,1,0.9958,High Risk
+93,10064,10037,USCA,USCA,Second Class,2,1,0.9935,High Risk
+94,10064,10037,USCA,USCA,Second Class,2,1,0.9953,High Risk
+95,10064,10037,USCA,USCA,Second Class,2,1,0.9863,High Risk
+96,10065,10025,LATAM,South America,Standard Class,4,1,0.9468,High Risk
+97,10066,10050,LATAM,South America,Standard Class,4,1,0.9112,High Risk
+98,10067,10057,Europe,Western Europe,Second Class,2,0,0.0518,Low Risk
+99,10067,10057,Europe,Western Europe,Second Class,2,0,0.0729,Low Risk
+100,10068,10044,Europe,Eastern Europe,Standard Class,4,1,0.9713,High Risk
+101,10068,10044,Europe,Eastern Europe,Standard Class,4,1,0.9692,High Risk
+102,10068,10044,Europe,Eastern Europe,Standard Class,4,1,0.9696,High Risk
+103,10069,10031,Europe,Southern Europe,Standard Class,4,0,0.0068,Low Risk
+104,10069,10031,Europe,Southern Europe,Standard Class,4,0,0.0087,Low Risk
+105,10069,10031,Europe,Southern Europe,Standard Class,4,0,0.0156,Low Risk
+106,10069,10031,Europe,Southern Europe,Standard Class,4,0,0.0107,Low Risk
+107,10070,10019,USCA,USCA,Standard Class,4,0,0.0964,Low Risk
+108,10071,10031,Pacific Asia,South Asia,Standard Class,4,0,0.073,Low Risk
+109,10071,10031,Pacific Asia,South Asia,Standard Class,4,0,0.0099,Low Risk
+110,10072,10021,LATAM,South America,Second Class,2,1,0.9988,High Risk
+111,10072,10021,LATAM,South America,Second Class,2,1,0.9993,High Risk
+112,10073,10062,Pacific Asia,Southeast Asia,Second Class,2,0,0.9985,High Risk
+113,10074,10051,LATAM,South America,Standard Class,4,1,0.9957,High Risk
+114,10074,10051,LATAM,South America,Standard Class,4,1,0.9959,High Risk
+115,10074,10051,LATAM,South America,Standard Class,4,1,0.9948,High Risk
+116,10075,10033,Pacific Asia,Southeast Asia,Standard Class,4,1,0.9407,High Risk
+117,10076,10017,Europe,Western Europe,First Class,1,1,0.9807,High Risk
+118,10077,10065,Europe,Southern Europe,Standard Class,4,0,0.0417,Low Risk
+119,10077,10065,Europe,Southern Europe,Standard Class,4,0,0.014,Low Risk
+120,10077,10065,Europe,Southern Europe,Standard Class,4,0,0.0169,Low Risk
+121,10077,10065,Europe,Southern Europe,Standard Class,4,0,0.0346,Low Risk
+122,10078,10047,Europe,Western Europe,Standard Class,4,0,0.0628,Low Risk
+123,10079,10034,Europe,Eastern Europe,Standard Class,4,1,0.9397,High Risk
+124,10080,10042,Europe,Eastern Europe,Second Class,2,1,0.9884,High Risk
+125,10080,10042,Europe,Eastern Europe,Second Class,2,1,0.9954,High Risk
+126,10081,10006,USCA,USCA,First Class,1,1,0.9931,High Risk
+127,10082,10048,Europe,Eastern Europe,Standard Class,4,1,0.9319,High Risk
+128,10082,10048,Europe,Eastern Europe,Standard Class,4,1,0.9611,High Risk
+129,10082,10048,Europe,Eastern Europe,Standard Class,4,1,0.7743,High Risk
+130,10083,10057,Pacific Asia,South Asia,Second Class,2,1,0.9973,High Risk
+131,10083,10057,Pacific Asia,South Asia,Second Class,2,1,0.9975,High Risk
+132,10083,10057,Pacific Asia,South Asia,Second Class,2,1,0.992,High Risk
+133,10083,10057,Pacific Asia,South Asia,Second Class,2,1,0.9949,High Risk
+134,10084,10003,LATAM,South America,Standard Class,4,1,0.6112,Moderate Risk
+135,10084,10003,LATAM,South America,Standard Class,4,1,0.9062,High Risk
+136,10085,10043,LATAM,South America,Standard Class,4,1,0.9964,High Risk
+137,10085,10043,LATAM,South America,Standard Class,4,1,0.9938,High Risk
+138,10085,10043,LATAM,South America,Standard Class,4,1,0.9929,High Risk
+139,10085,10043,LATAM,South America,Standard Class,4,1,0.9892,High Risk
+140,10086,10034,Europe,Western Europe,First Class,1,1,0.9848,High Risk
+141,10087,10066,USCA,USCA,Second Class,2,1,0.928,High Risk
+142,10088,10039,Africa,Western Africa,First Class,1,0,0.1584,Low Risk
+143,10088,10039,Africa,Western Africa,First Class,1,0,0.0658,Low Risk
+144,10089,10011,USCA,USCA,Same Day,0,1,0.8453,High Risk
+145,10090,10049,USCA,USCA,Standard Class,4,0,0.2319,Low Risk
+146,10091,10028,Europe,Northern Europe,Standard Class,4,0,0.0168,Low Risk
+147,10092,10041,Pacific Asia,South Asia,Standard Class,4,0,0.0608,Low Risk
+148,10092,10041,Pacific Asia,South Asia,Standard Class,4,0,0.0285,Low Risk
+149,10092,10041,Pacific Asia,South Asia,Standard Class,4,0,0.0695,Low Risk
+150,10092,10041,Pacific Asia,South Asia,Standard Class,4,0,0.0251,Low Risk
+151,10093,10043,Europe,Western Europe,Standard Class,4,0,0.0888,Low Risk
+152,10093,10043,Europe,Western Europe,Standard Class,4,0,0.0388,Low Risk
+153,10093,10043,Europe,Western Europe,Standard Class,4,0,0.0328,Low Risk
+154,10094,10062,USCA,USCA,First Class,1,1,0.9965,High Risk
+155,10095,10055,USCA,USCA,Second Class,2,1,0.9818,High Risk
+156,10096,10044,LATAM,South America,Standard Class,4,1,0.9506,High Risk
+157,10097,10004,LATAM,South America,Second Class,2,1,0.9748,High Risk
+158,10098,10042,Pacific Asia,Oceania,Standard Class,4,0,0.1268,Low Risk
+159,10099,10035,USCA,USCA,First Class,1,1,0.9939,High Risk
+160,10100,10045,LATAM,South America,Standard Class,4,1,0.9885,High Risk
+161,10101,10008,LATAM,South America,Standard Class,4,1,0.9821,High Risk
+162,10101,10008,LATAM,South America,Standard Class,4,1,0.9681,High Risk
+163,10102,10023,USCA,USCA,Second Class,2,1,0.9706,High Risk
+164,10103,10051,LATAM,South America,Second Class,2,1,0.9941,High Risk
+165,10103,10051,LATAM,South America,Second Class,2,1,0.9942,High Risk
+166,10103,10051,LATAM,South America,Second Class,2,1,0.9956,High Risk
+167,10104,10042,LATAM,South America,Second Class,2,1,0.9989,High Risk
+168,10105,10052,Europe,Eastern Europe,First Class,1,1,0.9931,High Risk
+169,10105,10052,Europe,Eastern Europe,First Class,1,1,0.9944,High Risk
+170,10106,10066,USCA,USCA,Same Day,0,1,0.9381,High Risk
+171,10107,10020,Europe,Western Europe,Standard Class,4,0,0.0114,Low Risk
+172,10108,10042,Pacific Asia,East Asia,Second Class,2,0,0.1918,Low Risk
+173,10109,10008,Africa,Western Africa,Standard Class,4,1,0.8517,High Risk
+174,10110,10010,Europe,Western Europe,Standard Class,4,0,0.0205,Low Risk
+175,10111,10025,Africa,Western Africa,Standard Class,4,1,0.9566,High Risk
+176,10111,10025,Africa,Western Africa,Standard Class,4,1,0.982,High Risk
+177,10111,10025,Africa,Western Africa,Standard Class,4,1,0.9809,High Risk
+178,10111,10025,Africa,Western Africa,Standard Class,4,1,0.9763,High Risk
+179,10112,10021,LATAM,South America,Standard Class,4,1,0.9964,High Risk
+180,10113,10043,Europe,Western Europe,Standard Class,4,0,0.0867,Low Risk
+181,10113,10043,Europe,Western Europe,Standard Class,4,0,0.0281,Low Risk
+182,10114,10011,Europe,Eastern Europe,Standard Class,4,1,0.9419,High Risk
+183,10114,10011,Europe,Eastern Europe,Standard Class,4,1,0.9226,High Risk
+184,10114,10011,Europe,Eastern Europe,Standard Class,4,1,0.9432,High Risk
+185,10114,10011,Europe,Eastern Europe,Standard Class,4,1,0.9459,High Risk
+186,10115,10012,LATAM,South America,Second Class,2,1,0.9847,High Risk
+187,10116,10063,Pacific Asia,Southeast Asia,Standard Class,4,1,0.8699,High Risk
+188,10117,10005,LATAM,South America,First Class,1,1,0.9979,High Risk
+189,10118,10022,Pacific Asia,South Asia,Standard Class,4,1,0.9239,High Risk
+190,10118,10022,Pacific Asia,South Asia,Standard Class,4,1,0.9001,High Risk
+191,10119,10030,Europe,Eastern Europe,Second Class,2,1,0.996,High Risk
+192,10119,10030,Europe,Eastern Europe,Second Class,2,1,0.9964,High Risk
+193,10119,10030,Europe,Eastern Europe,Second Class,2,1,0.9975,High Risk
+194,10120,10054,Pacific Asia,Southeast Asia,Second Class,2,1,0.9848,High Risk
+195,10120,10054,Pacific Asia,Southeast Asia,Second Class,2,1,0.9807,High Risk
+196,10120,10054,Pacific Asia,Southeast Asia,Second Class,2,1,0.985,High Risk
+197,10121,10035,USCA,USCA,Standard Class,4,0,0.0205,Low Risk
+198,10122,10004,Europe,Northern Europe,Second Class,2,1,0.9674,High Risk
+199,10123,10029,USCA,USCA,Standard Class,4,0,0.0192,Low Risk
+200,10123,10029,USCA,USCA,Standard Class,4,0,0.0344,Low Risk

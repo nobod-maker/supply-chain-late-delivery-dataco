@@ -1,0 +1,50 @@
+table Dim_Date
+	lineageTag: 40000000-0000-0000-0000-000000000005
+
+	column date_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: date_key
+
+	column full_date
+		dataType: dateTime
+		formatString: "yyyy-MM-dd"
+		sourceColumn: full_date
+
+	column day_of_month
+		dataType: int64
+		sourceColumn: day_of_month
+
+	column day_of_week_name
+		dataType: string
+		sourceColumn: day_of_week_name
+
+	column month_num
+		dataType: int64
+		sourceColumn: month_num
+
+	column month_name
+		dataType: string
+		sourceColumn: month_name
+
+	column quarter
+		dataType: int64
+		sourceColumn: quarter
+
+	column year
+		dataType: int64
+		sourceColumn: year
+
+	column is_weekend
+		dataType: int64
+		sourceColumn: is_weekend
+
+	partition Dim_Date = m
+		mode: import
+		source =
+			let
+				Source = Csv.Document(File.Contents("data/clean/dim_date.csv"),[Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"
